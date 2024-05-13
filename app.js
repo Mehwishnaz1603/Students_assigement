@@ -3,7 +3,8 @@
 // whether the ente5red number is greater than, equal to, or less than the dynamic number value.
 import inquirer from "inquirer";
 let dynamicNumber = Math.round(Math.random() * 100);
-console.log(dynamicNumber);
+console.group(dynamicNumber);
+console.log("Select Numbers 1 to 100");
 async function dynamic() {
     let userInput = await inquirer.prompt([{
             name: "Number", type: "input", message: "Enter the Number:"
